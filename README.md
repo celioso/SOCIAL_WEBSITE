@@ -29,3 +29,32 @@
 [Django 4 by example (4th Edition) github](https://github.com/PacktPublishing/Django-4-by-example)
 
 [Django 4 by example (4th Edition) book](https://books.google.es/books?id=GLaEEAAAQBAJ&pg=PA171&hl=es&source=gbs_selected_pages&cad=1#v=onepage&q&f=false)
+
+
+### Prueba de cambio de contraseña
+
+se utiliza `EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'` para simular el envio de un correo
+
+envia el siguiente testo a la terminal para cambiar la contraseña
+
+```bash
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: celioso1@hotmail.com
+Date: Fri, 19 Jul 2024 22:54:02 -0000
+Message-ID: <172142964276.17200.7346351970624961279@LaptopCelis>
+
+Someone asked for password reset for email celioso1@hotmail.com. Follow the link below:
+http://127.0.0.1:8000/account/password-reset/Mg/cafb22-bf8f3c88048d2f29c863cf5bc3b47138/
+Your username, in case you've forgotten: pildoras
+-------------------------------------------------------------------------------
+```
+
+### pillow
+pillow es para trabajar con imagenes `pip install pillow`
+
+[pillow](https://pypi.org/project/pillow/)
+[Documentacion](https://pillow.readthedocs.io/en/stable/)
