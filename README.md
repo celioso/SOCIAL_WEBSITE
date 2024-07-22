@@ -58,3 +58,47 @@ pillow es para trabajar con imagenes `pip install pillow`
 
 [pillow](https://pypi.org/project/pillow/)
 [Documentacion](https://pillow.readthedocs.io/en/stable/)
+
+## Implementacion de autenticacion con redes sociales
+
+**python-social-auth**
+
+`pip install git+https://github.com/python-social-auth/social-app-django.git@20fabcd7bd9a8a41910bc5c8ed1bd6ef2263b328`
+
+para el  cambio de hosts se ingresa a cmd como admin
+
+```bash
+Microsoft Windows [Versión 10.0.22631.3880]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Windows\System32>cd etc
+El sistema no puede encontrar la ruta especificada.
+
+C:\Windows\System32>cd drivers
+
+C:\Windows\System32\drivers>cd etc
+
+C:\Windows\System32\drivers\etc>notepad hosts
+
+C:\Windows\System32\drivers\etc>
+```
+he ingresamos la siguiente direccion al final `127.0.0.1 mysite.com`
+
+ya s epuede ingresar al link `http://mysite.com:8000/account/login/`
+
+### Instalar django Extension
+
+`pip install git+https://github.com/django-extensions/django-extensions.git@25a41d8a3ecb24c009c5f4cac6010a091a3c91c8`
+
+luego `pip install werkzeug`
+
+### RunServerPlus
+
+`pip install pyOpenSSL`
+
+iniciar el servidor: python manage.py runserver_plus --cert-file cert.crt
+
+https://developers.facebook.com/app
+
+### apuntalando el contenido en tu web
+crear nuevo proyecto: `python manage.py startapp images`
