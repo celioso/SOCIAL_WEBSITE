@@ -102,3 +102,20 @@ https://developers.facebook.com/app
 
 ### apuntalando el contenido en tu web
 crear nuevo proyecto: `python manage.py startapp images`
+
+### Para probar metodos 
+
+```bash
+(venv) PS C:\Users\celio\OneDrive\Escritorio\programación\practica-django\SOCIAL_WEBSITE\bookmarks>      python manage.py shell
+Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from django.utils.text import slugify
+>>> slugify("Hola me llamo django")
+'hola-me-llamo-django'
+
+```
+### Descargar imagenes con una URL
+
+Con esto se utiliza para descargar imagenes desde una url
+`pip install requests`
