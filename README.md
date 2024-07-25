@@ -119,3 +119,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Con esto se utiliza para descargar imagenes desde una url
 `pip install requests`
+
+[django login social base](https://github.com/pildorasdeprogramacion/django-login-social-base)
+
+[Prueba de Bookmark](https://127.0.0.1:8000/images/create/?title=%20Django%20and%20Duke&url=https://upload.wikimedia.org/wikipedia/commons/8/85/Django_Reinhardt_and_Duke_Ellington_%28Gottlieb%29.jpg)
