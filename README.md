@@ -84,7 +84,7 @@ C:\Windows\System32\drivers\etc>
 ```
 he ingresamos la siguiente direccion al final `127.0.0.1 mysite.com`
 
-ya s epuede ingresar al link `http://mysite.com:8000/account/login/`
+ya s epuede ingresar al link `https://mysite.com:8000/account/login/`
 
 ### Instalar django Extension
 
