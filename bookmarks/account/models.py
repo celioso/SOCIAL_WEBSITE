@@ -32,7 +32,6 @@ class Contact(models.Model):
     def __str__(self):
         return f'{self.user_from} follows {self.user_to}'
 
-
 # Add following field to User dynamically
 user_model = get_user_model()
 user_model.add_to_class('following',
