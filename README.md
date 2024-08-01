@@ -138,3 +138,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
 ]
 ```
+
+### Instalar Django Debug Toolbar 
+
+`pip install django-debug-toolbar`
