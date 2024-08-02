@@ -147,7 +147,7 @@ INSTALLED_APPS = [
 
 1. se instala docker.
 2. se crea la imagen `docker pull redis` 
-3. Crea el cvontenedor `docker run -it --rm --name redis -p 6379:6379 redis`
+3. Crea el cvontenedor `docker run -it --rm --name redis -p 6379:6379 redis` o con `docker run -d -it --rm --name redis -p 6379:6379 redis` para que corra en segundo plano.
 4. ingresa al contenedor `docker exec -it redis sh`
 5. en redis se utiliza clave valor.
  1. `# redis-cli` se inicia el cliente 
