@@ -142,3 +142,25 @@ INSTALLED_APPS = [
 ### Instalar Django Debug Toolbar 
 
 `pip install django-debug-toolbar`
+
+### Instalar Docker
+
+1. se instala docker.
+2. se crea la imagen `docker pull redis` 
+3. Crea el cvontenedor `docker run -it --rm --name redis -p 6378:6379 redis`
+4. ingresa al contenedor `docker exec -it redis sh`
+5. en redis se utiliza clave valor.
+ 1. `# redis-cli` se inicia el cliente 
+ 2. 127.0.0.1:6379> SET name "Peter"  para ingresaar un valor
+    OK
+ 3. `127.0.0.1:6379> GET name` para ver el valor de name 
+    "Peter"
+ 4. `127.0.0.1:6379> EXISTS name` ver la key del valor name
+    (integer) 1
+ 5. `127.0.0.1:6379> GET name` para ver el valor de name 
+    "Peter"
+ 6. `127.0.0.1:6379> EXPIRE name 3` se le da un tiempo de permanencia que so 3 segundos
+    (integer) 1
+ 7. `127.0.0.1:6379> GET name` para ver el valor de name
+(nil) muesta null porque el dato ya no esta en la base de datos 
+6. instalar redis `pip install redis`
