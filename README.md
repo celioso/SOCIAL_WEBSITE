@@ -1,4 +1,4 @@
-# SOCIAL_WEBSITE
+# Social WEBSITE
 
 1. ver la version de `python --version`
 
