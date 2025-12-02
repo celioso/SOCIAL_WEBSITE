@@ -136,7 +136,7 @@ LOGOUT_URL = 'logout'
 #    "127.0.0.1",
 #]
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # se utiliza para simular un email
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # se utiliza para simular un email
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config('USER_EMAIL')
@@ -144,4 +144,15 @@ EMAIL_HOST_PASSWORD = config('PASS_APP')
 EMAIL_PORT = 587  
 EMAIL_USE_TLS = True
 
-#173=200
+"""
+PASSWORD_HASHERS = [
+    "django.contrib.auth.hashers.Argon2PasswordHasher",        # 🔐 Más seguro (si está disponible)
+    "django.contrib.auth.hashers.PBKDF2PasswordHasher",        # Default de Django
+    "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
+    "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
+    "django.contrib.auth.hashers.ScryptPasswordHasher",
+]
+"""
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
