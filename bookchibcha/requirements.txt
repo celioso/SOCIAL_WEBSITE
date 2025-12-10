@@ -1,8 +1,12 @@
 asgiref>=3.11.0
 Django>=5.2.8
+django-extensions @ git+https://github.com/django-extensions/django-extensions@192b1d68ea720586b17e9ab7aa24ed0e9b2f38da
+idna==3.11
 pillow>=12.0.0
+pyOpenSSL>=25.3.0
 python-decouple>=3.8
 social-auth-app-django @ git+https://github.com/python-social-auth/social-app-django@0b6e2c9b80d1b52c79edd3eaa21ba9f8524275c7
 social-auth-core>=4.8.1
 sqlparse>=0.5.4
 tzdata>=2025.2
+Werkzeug>=3.1.4
