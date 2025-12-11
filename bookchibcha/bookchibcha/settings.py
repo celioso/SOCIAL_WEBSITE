@@ -164,6 +164,7 @@ AUTHENTICATION_BACKENDS =[
     "django.contrib.auth.backends.ModelBackend",
     "account.authentication.EmailAuthBackend",
     "social_core.backends.facebook.FacebookOAuth2",
+    "social_core.backends.twitter.TwitterOAuth",
 ]
 
 ALLOWED_HOSTS = ["mysite.com", "localhost", "127.0.0.1"]
@@ -171,3 +172,6 @@ ALLOWED_HOSTS = ["mysite.com", "localhost", "127.0.0.1"]
 SOCIAL_AUTH_FACEBOOK_KEY = config('SOCIAL_FACEBOOK_KEY') # Facebook App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = config('SOCIAL_FACEBOOK_SECRET') # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+SOCIAL_AUTH_TWITTER_KEY = config('API_Key')
+SOCIAL_AUTH_TWITTER_SECRET= config('API_Key_Secret')
