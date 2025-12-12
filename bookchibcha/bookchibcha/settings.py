@@ -165,6 +165,7 @@ AUTHENTICATION_BACKENDS =[
     "account.authentication.EmailAuthBackend",
     "social_core.backends.facebook.FacebookOAuth2",
     "social_core.backends.twitter.TwitterOAuth",
+    "social_core.backends.google.GoogleOAuth2"
 ]
 
 ALLOWED_HOSTS = ["mysite.com", "localhost", "127.0.0.1"]
@@ -175,3 +176,6 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 SOCIAL_AUTH_TWITTER_KEY = config('API_Key')
 SOCIAL_AUTH_TWITTER_SECRET= config('API_Key_Secret')
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = config('GOOGLE_OAUTH2_KEY') # Google Client ID
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = config('GOOGLE_OAUTH2_SECRET') # Google Client Secret
