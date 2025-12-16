@@ -165,4 +165,4 @@ INSTALLED_APPS = [
 (nil) muesta null porque el dato ya no esta en la base de datos 
 6. instalar redis `pip install redis`
 
-Prueba
+Prueba 👍🏽
