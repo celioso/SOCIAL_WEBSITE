@@ -164,5 +164,3 @@ INSTALLED_APPS = [
  7. `127.0.0.1:6379> GET name` para ver el valor de name
 (nil) muesta null porque el dato ya no esta en la base de datos 
 6. instalar redis `pip install redis`
-
-Prueba 👍🏽
