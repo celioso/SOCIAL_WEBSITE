@@ -6,4 +6,5 @@ class ImageAdmin(admin.ModelAdmin):
     list_display = ["title", "slug", "image", "created"]
     list_filter=["created"]
 
-    # 243= 270
+    # 244= 271
+# pruebass
